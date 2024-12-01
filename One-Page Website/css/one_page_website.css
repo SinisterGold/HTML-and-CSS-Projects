@@ -1,0 +1,33 @@
+html {
+    font-size: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 14px;
+    margin: 0% auto;
+    color: black;
+}
+
+h1 {
+    color: red;
+    font-weight: 900;
+    text-decoration: underline;
+
+}
+
+.reservation input[type=text] {
+width: auto;
+font-weight: 600;
+margin: 10px;
+border-top: 1px solid #0f0505;
+border-bottom: 1px solid #0f0505;
+border-right: 1px solid #0f0505;
+border-left: 1px solid #0f0505;
+border-radius: 10px;
+}
+
+

@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>col Tag Challenge</title>
-		<meta charset="utf-8">
-	</head>
-	<body>
-		<table>
-			<colgroup>
-				<col span="2" style="background-color:red">
-				<col style="background-color:yellow">
-			</colgroup>
-			<tr>
-				<th>ISBN</th>
-				<th>Title</th>
-				<th>Price</th>
-			</tr>
-			<tr>
-				<td>3476896</td>
-				<td>My first HTML</td>
-				<td>$53</td>
-			</tr>
-		</table>	
-								
-						
-	</body>
+<head>
+<title>col Tag Challenge</title>
+<meta charset="utf-8">
+<style>
+table, th, td {
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+}
+
+th {
+	background-color: red;
+	font-size: 14px;
+	font-weight: 700;
+	width: 100px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+td {
+	background-color: blue;
+	color: white;
+}
+
+table {
+	background-color: yellow;
+}
+
+
+</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Month</th>
+			<th>Saving</th>
+		</tr>
+		<tr>
+			<td>Jan</td>
+			<td>$100</td>
+		</tr>
+		<tr>
+			<td>Feb</td>
+			<td>$200</td>
+		</tr>
+	</table>	
+</body>
 </html>
