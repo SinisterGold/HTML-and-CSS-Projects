@@ -1,0 +1,174 @@
+.heading {
+    text-align: center;
+    margin-top: 70px;
+}
+
+/*--Challange 5-1--*/
+.photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    filter: invert(100%);
+    border-radius: 50px;
+}
+
+
+/*--Challange 5-2--*/
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+/*--Challange 5-3--*/
+.studenttable, th, td {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid green;
+    text-align: center;
+}
+
+#headingtable {
+    background-color: rgb(235, 13, 13);
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*--Challange 5-4--*/
+
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.centered {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/*--Challange 5-5--*/
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #5f00f7;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    z-index: 1;
+}
+  
+  /* Links inside the navbar */
+.navbar a {
+    float: inline-start;
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  
+.navbar a:hover {
+    background: #fa0303;
+    color: rgb(5, 5, 5);
+}
+  
+  
+
+/*--Challange 5-6--*/
+.column1 {
+    float: left;
+    width: 40%;
+    height: 200px;
+    background-color: purple;
+    color: white;
+}
+ 
+.column2 {
+    float: right;
+    width: 40%;
+    height: 200px;
+    background-color: green;
+    color: red;
+}
+  /* This basically makes it so that stuff after these columsn are floated left or right */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*--Challange 5-7--*/
+.hovertext{
+    text-align: center;
+}
+
+
+.hovertext:hover {
+    color: blue;
+}
+
+/*--Challange 5-8--*/
+.imgcontainer {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: green;
+}
+
+.imgcontainer:hover .overlay {
+    opacity: 1;
+}
+
+.overtext {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/*--Challange 5-9--*/
+/*No CSS Needed*/
+
+
+/*--Challange 5-10--*/
+.imbedvideo {
+    position: relative;
+    text-align: center;
+    color: yellow;
+}
+
+.videooverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
