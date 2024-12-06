@@ -2,5 +2,5 @@
 This Repository contain a sample of my HTML and CSS projects
 
 ##Projects
-[Space Station](file:///C:/Users/rmutu/Documents/GitHub/HTML-and-CSS-Projects/Project/index.html)
+[Space Station] (https://github.com/SinisterGold/HTML-and-CSS-Projects/tree/main/Project)
 
