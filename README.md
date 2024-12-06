@@ -1,3 +1,6 @@
 # HTML-and-CSS-Projects
-HTML Course Work
-This Repository will contain all my assignment work for TAHT02E1 - HTML
+This Repository contain a sample of my HTML and CSS projects
+
+##Projects
+[Space Station](file:///C:/Users/rmutu/Documents/GitHub/HTML-and-CSS-Projects/Project/index.html)
+
