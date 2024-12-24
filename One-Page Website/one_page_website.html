@@ -1,149 +1,74 @@
 <!DOCTYPE html>
-<html lanf="en">
-	<head>
-		<title>Cars-R-Us | Exotic Car Rental</title>
-		<link rel="stylesheet" href="./css/one_page_website.css">
-		<meta charset="utf-8">
-	</head>
-	<body>
-		<!--NAV-->
-		<div>
-			<div>
-				<a href="#home">HOME</a>
-				<a href="#about">ABOUT US</a>
-				<a href="#gallary">GALLARY</a>
-				<a href="#contact">RESERVATIONS</a>	
-			</div>
-		</div>
-		<!--END NAV-->
-		
-		<!--HOME-->
-		<div id="home">
-			<div>
-				<div>
-					<span>Exotic Car Rental</span>
-				</div>
-			</div>
-		</div>
-		<!--END HOME-->
-		
-		<!--ABOUT US-->
-		<section>
-			<div id="about">
-				<h1>About Us</h1>
-				<div>
-					<iframe src="url" title="description" width="560" height="315" frameborder="0" allowfullscreen></iframe>
-				</div>
-			</div>
-		</section>
-		<!--ABOUT US END-->
-		
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+	<link rel="stylesheet" href="./css/one_page_website.css">
+	<script src="./js/one_page_website.js"></script>	
+</head>
 
-		<!--GALLARY-->
-		<section>
-			<div id="gallary">
-				<h1>Gallery</h1>
-				<div>
-				
-					<!--PHOTO-CONTAINER 1-->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_1.jpg" alt="Supra MK4">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Drive Your Dream Car Today!</p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO-CONTAINER 1-->
-					
-					<!--PHOTO-CONTAINER 2-->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_2.jpg" alt="Ferrari Enzo">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Drive Your Dream Car Today!</p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO-CONTAINER 2-->
-					
-					<!--PHOTO-CONTAINER 3-->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_3.jpg" alt="Lamborgini Hurrican">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Drive Your Dream Car Today!</p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO-CONTAINER 3-->
-					
-					<!--PHOTO-CONTAINER 4-->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_4.jpg" alt="1980s Porshe 911 Turbo">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Drive Your Dream Car Today!</p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO-CONTAINER 4-->
-						
-				</div>
-			</div>
-		</section>
-		<!--END GALLARY-->
-		
-		<!--RSVP-->
-		<section>
-			<div id="contact">
-				<div>
-					<h1>Reservations</h1>
-					<div class="reservation">
-						<h2><span>Your Dream Car Awaits!</span>
-							<br/>Reserve your ride today!
-						</h2>
-						<p>
-							Please provide us with your basic contact information.
-						</p>
-						<div>
-							<form action="" method="post">
-								<input class="rsvp" type="text" placeholder="First Name"><br>
-								<input class="rsvp" type="text" placeholder="Last Name"><br>
-								<input class="rsvp" type="text" placeholder="Email Address"><br>
-								<input class="rsvp" type="text" placeholder="Phone Number"><br>
-								
-								<div class="subbutton">
-									 <input type="checkbox" name="Subscribe">
-									 <label>Subscribe for Newsletter?</label>
-								</div>
-							</form>
-							
-								<div class="form-spacer">
-									<label class="terms">Terms and Condidtions</label>
-								</div>
-								<div>
-									<input type="submit" value="Submit">
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--END RSVP-->
-		
-		<!--FOOTER-->
-		<div>
-			www.needforspeed.cars &nbsp;|&nbsp; &copy; 2024
-		</div>
-		<!--END FOOTER-->
-		
-								
-						
-	</body>
+<body>
+<h2 style="text-align:center">Car Lightbox</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="./images/thumb/mini_thumbnail_1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/thumb/mini_thumbnail_2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/thumb/mini_thumbnail_3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/thumb/mini_thumbnail_4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="./images/thumb/thumbnail_1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./images/thumb/thumbnail_2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./images/thumb/thumbnail_3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./images/thumb/thumbnail_4.jpg" style="width:100%">
+    </div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="./images/thumb/thumbnail_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="MK4 and RX7">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/thumb/thumbnail_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Ferrari Enzo">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/thumb/thumbnail_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Orange Lambo">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/thumb/thumbnail_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Porshe 911">
+    </div>
+  </div>
+</div>    
+</body>
 </html>
